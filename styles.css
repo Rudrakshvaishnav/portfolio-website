@@ -1,0 +1,180 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1D3557; /* Dark Blue Background */
+    color: #ECF0F1; /* Light Text */
+    line-height: 1.6;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent Dark Background */
+    padding: 20px 0;
+    position: relative; /* Change from fixed to relative */
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #E63946; /* Bright Red */
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+}
+
+.navbar h1:hover {
+    color: #F1FAEE; /* Light color on hover */
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: #ECF0F1;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #E63946;
+    text-decoration: underline;
+    transform: translateY(-5px);
+}
+
+/* Adding padding to content so it doesn't overlap with header */
+main {
+    padding-top: 120px;  /* Increase padding to fix the header overlap */
+}
+
+/* Section Styles */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2); /* Transparent Dark Background for sections */
+    border-radius: 10px;
+    margin: 40px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+}
+
+.section-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 3em;
+    color: #ECF0F1;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #E63946; /* Red on hover */
+}
+
+/* Skills Section Styling */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.skill-card {
+    background-color: rgba(0, 0, 0, 0.4); /* Transparent Dark Blue */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    color: #ECF0F1;
+    cursor: pointer;  /* Pointer cursor on hover */
+}
+
+/* Hover Effect */
+.skill-card:hover {
+    transform: translateY(-10px);
+    background-color: rgba(211, 47, 47, 0.6); /* Dark Red on hover */
+    color: #FFFFFF;  /* White text on hover for contrast */
+}
+
+/* Active Effect (When clicked) */
+.skill-card:active {
+    background-color: rgba(211, 47, 47, 0.8); /* Dark Red when clicked */
+    transform: translateY(-5px);  /* Slightly reduce the translation on active click */
+}
+
+/* Hobbies Section */
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li:hover {
+    color: #E63946; /* Red on hover */
+}
+
+/* Contact Section */
+a {
+    color: #E63946;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #F1FAEE; /* Light color on hover */
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2A3D60;
+    color: #ECF0F1;
+    font-size: 1.1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
